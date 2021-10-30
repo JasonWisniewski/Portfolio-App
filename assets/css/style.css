@@ -1,0 +1,114 @@
+:root {
+    --primary-color: Blue;
+    --secondary-color: red;
+    --third-color: Brown;
+    --headers-color: rgb(99, 9, 158); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--third-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 3px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--headers-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.002);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.25vw;
+    text-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+header nav ul li a:hover {
+    color: aqua;
+    transition: color 0.25s ease;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+footer {
+    color: var(--secondary-color);
+    font-size: 30 px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+
+footer h2 {
+    color: var(--third-color);
+    font-size: 30px;
+    margin: 0;
+    padding: 12px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    line-height: 1.5;
+    text-align: right;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 12px;
+    font-weight: lighter;
+    font-size: 2.25vw;
+    text-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+footer ul li:hover {
+    color:blue;
+    text-decoration:underline;
+    transition: color .25s ease;
+}
+
+.hero {
+    background-image: url("../images/Coffee-notes.jpg");
+    background-size: cover;
+    display: flex;
+}
+/* Media Query for iphone x */
+@media screen and (max-width: 375px) {
+
+    /* need to stack header and footer in columns and more */
+}
