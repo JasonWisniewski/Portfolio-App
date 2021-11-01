@@ -1,8 +1,10 @@
 :root {
-    --primary-color: Blue;
+    --primary-color:#A27035;
     --secondary-color: red;
-    --third-color: Brown;
-    --headers-color: rgb(99, 9, 158); 
+    --third-color: #242331;
+    --headers-color: #B88B4A; 
+    --golden-brown: #A27035;
+    --flax: #DDCA7D;
 }
 
 *{
@@ -17,20 +19,20 @@ body {
 }
 
 header {
+    height: fit-content;
+    width: 100%;
     padding: 20px 3px;
     background-color: var(--third-color);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--headers-color);
+    color: var(--flax);
     margin: 0;
     text-shadow: 0 0 10px rgba(0,0,0,0.002);
 }
@@ -48,6 +50,7 @@ header nav ul {
 }
 
 header nav ul li a {
+    color: var(--headers-color);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 2.25vw;
@@ -55,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: aqua;
+    color: var(--flax);
     transition: color 0.25s ease;
 }
 
@@ -64,19 +67,22 @@ h1 {
 }
 
 footer {
-    color: var(--secondary-color);
+    height:fit-content;
+    width: 100%;
+    color: var(--headers-color);
     font-size: 30 px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: bisque;
+    background-color: var(--third-color);
 }
 
 footer h2 {
-    color: var(--third-color);
+    color: var(--flax);
     font-size: 30px;
     margin: 0;
-    padding: 12px;
+    padding: 13px;
+    border-right: 5px solid;
 }
 
 footer ul {
@@ -89,24 +95,110 @@ footer ul {
     list-style: none;
 }
 
-footer ul li {
+footer ul li, footer ul li a {
     padding: 12px;
     font-weight: lighter;
     font-size: 2.25vw;
     text-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    text-decoration: none;
+    color:var(--headers);
 }
 
 footer ul li:hover {
-    color:blue;
+    color:var(--flax);
     text-decoration:underline;
     transition: color .25s ease;
 }
 
-.hero {
-    background-image: url("../images/Coffee-notes.jpg");
+footer ul li a:hover {
+    color:var(--flax);
+    text-decoration:underline;
+    transition: color .25s ease;
+}
+
+.coffee-notes {
+    background-image: url("../images/Yosemite-Sam.jpg");
     background-size: cover;
+    height: 300px;
+    background-position:10%;
+    margin-bottom: 0px;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+
+/* About me */
+.about-me {
+    height: 500px;
+    width: 100%;
     display: flex;
 }
+
+
+.about-me h2 {
+    height: 500px;
+    width: auto;
+    padding: 10px;
+    color: var(--flax);
+    border-right: 6px solid var(--flax);
+    background-color: var(--third-color);
+}
+
+.about-me div {
+    height: 500px;
+    width: 100%;
+    background-color: var(--third-color);
+}
+
+.about-me p {
+    height: 200px;
+    width: 80%;
+    padding: 50px;
+    position: relative;
+    top: 150px;
+    left: 90px;
+    text-align: center;
+    z-index: 999;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+/* Projects */
+main {
+    height: 1000px;
+    width:100%;
+    background-color: var(--third-color);
+    display: flex;
+}
+
+main h2 {
+    height: 1000px;
+    width: 150px;
+    color: var(--flax);
+    font-size: 30px;
+    border-right:6px solid var(--flax);
+}
+
+.projects {
+    height: 100px;
+    width: 100%;
+    background-color: var(--third-color);
+}
+
+.Run-Buddy img{
+    height: 500px;
+    width: 700px;
+    position: relative;
+    top: 25px;
+    left: 110px;
+    border: 5px black solid;
+    border-radius: 15px;
+}
+
+.Run-Buddy img:hover {
+    opacity: 0.9;
+    transition: opacity .25 ease;
+}
+
 /* Media Query for iphone x */
 @media screen and (max-width: 375px) {
 
