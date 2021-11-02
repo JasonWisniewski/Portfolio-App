@@ -127,33 +127,43 @@ footer ul li a:hover {
 }
 
 /* About me */
+.article {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    background-color: var(--third-color);
+}
+
+
+.section-title {
+    font-size: 48px;
+    color: var(--flax);
+    border-bottom: 4px solid var(--flax);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+}
+
 .about-me {
     height: 500px;
     width: 100%;
+    background-color: var(--third-color);
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-
-.about-me h2 {
-    height: 500px;
+.about-me img {
+    height: 400px;
     width: auto;
-    padding: 10px;
-    color: var(--flax);
-    border-right: 6px solid var(--flax);
-    background-color: var(--third-color);
-}
-
-.about-me div {
-    height: 500px;
-    width: 100%;
-    background-color: var(--third-color);
+    border-radius: 5px
 }
 
 .about-me p {
+    font-size: 17px;
     height: 200px;
-    width: 80%;
+    width: 60%;
     padding: 50px;
-    position: relative;
     top: 150px;
     left: 90px;
     text-align: center;
@@ -163,28 +173,35 @@ footer ul li a:hover {
 }
 
 /* Projects */
-main {
+
+.work {
     height: 1000px;
-    width:100%;
+    width: 100%;
     background-color: var(--third-color);
     display: flex;
+    flex: wrap;
+    justify-content: space-around;
 }
 
-main h2 {
-    height: 1000px;
-    width: 150px;
+.work h2 {
+    height: 100px;
+    width: 200px;
     color: var(--flax);
-    font-size: 30px;
-    border-right:6px solid var(--flax);
+    font-size: 40px;
+    border-bottom:6px solid var(--flax);
+    align-items: center;
 }
 
 .projects {
     height: 100px;
     width: 100%;
-    background-color: var(--third-color);
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-.Run-Buddy img{
+.Run-Buddy img {
     height: 500px;
     width: 700px;
     position: relative;
@@ -194,7 +211,17 @@ main h2 {
     border-radius: 15px;
 }
 
-.Run-Buddy img:hover {
+.project-2 img, .project-3 img, .project-4 img{
+    height: 250px;
+    width: 450px;
+    position: relative;
+    top: 25px;
+    left: 110px;
+    border: 5px black solid;
+    border-radius: 15px;
+}
+
+.Run-Buddy img:hover,.project-2 img:hover, .project-3 img:hover, .project-4 img:hover {
     opacity: 0.9;
     transition: opacity .25 ease;
 }
