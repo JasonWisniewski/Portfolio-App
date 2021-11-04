@@ -15,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
 header {
     height: fit-content;
     width: 100%;
@@ -62,7 +63,9 @@ header nav ul li a:hover {
 h1 {
     color: var(--secondary-color);
 }
+/* End Header */
 
+/* Footer */
 footer {
     height:fit-content;
     width: 100%;
@@ -111,8 +114,10 @@ footer ul li a:hover {
     text-decoration:underline;
     transition: color .25s ease;
 }
+/* End footer */
 
-.coffee-notes {
+/* hero */
+.yosemite-hero {
     background-image: url("../images/Yosemite-Sam.jpg");
     background-size: cover;
     height: 300px;
@@ -123,24 +128,18 @@ footer ul li a:hover {
 }
 
 /* About me */
-.article {
-    height: 800px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--background-color);
-}
 
 .section-title {
-    font-size: 3vw;
+    font-size: 30px;
     color: var(--header-color);
     border-bottom: 4px solid var(--header-color);
     padding-bottom: 10px;
     text-align: center;
+    background-color: var(--background-color);
 }
 
 .about-me {
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     background-color: var(--background-color);
     display: flex;
@@ -158,7 +157,7 @@ footer ul li a:hover {
 
 .about-me p {
     font-size: 17px;
-    height: 200px;
+    /* height: 200px; */
     width: 60%;
     padding: 50px;
     top: 150px;
@@ -171,7 +170,7 @@ footer ul li a:hover {
 
 /* Projects */
 
-.flex-row {
+/* .flex-row { */
     /* display: flex; */
     /* height: 100px;
     width: 300px;
@@ -180,18 +179,17 @@ footer ul li a:hover {
     border-bottom:6px solid var(--header-color);
     align-items: center;
     background-color: var(--background-color); */
-}
+/* } */
 
 main div h2 {
     font-size: 45px;
     color: var(--header-color);
-    border-bottom: 5px solid var(--header-color);
+    border-bottom: 4px solid var(--header-color);
     background-color: var(--background-color);
     text-align: center;
 }
 
 .projects {
-    height: 1300px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -201,11 +199,21 @@ main div h2 {
 }
 
 .Run-Buddy {
-    height: 500px;
     width: 100%;
-    margin: 30px;
+    margin: 25px;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.Run-Buddy h3, .project-small h3 {
+    padding: 8px;
+    font-size: 30px;
+    color: var(--secondary-header-color);
+}
+
+.Run-Buddy a, .project-small a {
+    text-decoration: none;
 }
 
 .Run-Buddy img {
@@ -214,22 +222,22 @@ main div h2 {
     margin: 22px;
     border: 5px black solid;
     border-radius: 15px;
+    padding: 5px;
 }
 
 .project-small {
-    margin: 18px;
+    padding: 10px;
+    margin: 20px;
     display: flex;
     flex: wrap;
     justify-content: space-evenly;
     align-items: flex-end;
+    text-align: center;
 }
 
 .project-small img {
     height: 300px;
     width: 500px;
-    /* position: relative; */
-    /* top: 25px;
-    left: 110px; */
     border: 5px black solid;
     border-radius: 15px;
 }
@@ -240,7 +248,15 @@ main div h2 {
 }
 
 /* Media Query for iphone x */
-@media screen and (max-width: 1100px) {
-    
+
     /* need to stack header and footer in columns and more */
+
+@media screen and (max-width: 950px) {
+    /* media query for resizing p in about me section */
 }
+
+@media screen and (max-width: 950px) {
+    /* media query for resizing for phone length ~300px
+    - do work for all background colors,  
+    - stack nav options 
+    - about me text */
