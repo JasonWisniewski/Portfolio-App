@@ -1,10 +1,7 @@
 :root {
-    --primary-color:#A27035;
-    --secondary-color: red;
-    --third-color: #242331;
-    --headers-color: #B88B4A; 
-    --golden-brown: #A27035;
-    --flax: #DDCA7D;
+    --background-color: #242331;
+    --header-color: #DDCA7D;
+    --secondary-header-color: #B88B4A; 
 }
 
 *{
@@ -14,7 +11,7 @@
 }
 
 body {
-    color: var(--third-color);
+    color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +19,7 @@ header {
     height: fit-content;
     width: 100%;
     padding: 20px 3px;
-    background-color: var(--third-color);
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -31,8 +28,8 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: var(--flax);
+    font-size: 3.5vw;
+    color: var(--header-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0,0,0,0.002);
 }
@@ -50,7 +47,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: var(--headers-color);
+    color: var(--secondary-header-color);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 2.25vw;
@@ -58,7 +55,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--flax);
+    color: var(--header-color);
     transition: color 0.25s ease;
 }
 
@@ -69,20 +66,19 @@ h1 {
 footer {
     height:fit-content;
     width: 100%;
-    color: var(--headers-color);
+    color: var(--secondary-header-color);
     font-size: 30 px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--third-color);
+    background-color: var(--background-color);
 }
 
 footer h2 {
-    color: var(--flax);
-    font-size: 30px;
+    color: var(--header-color);
+    font-size: 40px;
     margin: 0;
     padding: 13px;
-    border-right: 5px solid;
 }
 
 footer ul {
@@ -105,13 +101,13 @@ footer ul li, footer ul li a {
 }
 
 footer ul li:hover {
-    color:var(--flax);
+    color:var(--header-color);
     text-decoration:underline;
     transition: color .25s ease;
 }
 
 footer ul li a:hover {
-    color:var(--flax);
+    color:var(--header-color);
     text-decoration:underline;
     transition: color .25s ease;
 }
@@ -131,32 +127,33 @@ footer ul li a:hover {
     height: 800px;
     width: 100%;
     display: flex;
-    background-color: var(--third-color);
+    flex-wrap: wrap;
+    background-color: var(--background-color);
 }
 
-
 .section-title {
-    font-size: 48px;
-    color: var(--flax);
-    border-bottom: 4px solid var(--flax);
-    padding-bottom: 20px;
+    font-size: 3vw;
+    color: var(--header-color);
+    border-bottom: 4px solid var(--header-color);
+    padding-bottom: 10px;
     text-align: center;
-    margin: 0 auto 35px auto;
 }
 
 .about-me {
     height: 500px;
     width: 100%;
-    background-color: var(--third-color);
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .about-me img {
     height: 400px;
     width: auto;
-    border-radius: 5px
+    border-radius: 5px;
+    display: flex;
 }
 
 .about-me p {
@@ -174,60 +171,76 @@ footer ul li a:hover {
 
 /* Projects */
 
-.work {
-    height: 1000px;
-    width: 100%;
-    background-color: var(--third-color);
-    display: flex;
-    flex: wrap;
-    justify-content: space-around;
+.flex-row {
+    /* display: flex; */
+    /* height: 100px;
+    width: 300px;
+    color: var(--header-color);
+    font-size: 40px;
+    border-bottom:6px solid var(--header-color);
+    align-items: center;
+    background-color: var(--background-color); */
 }
 
-.work h2 {
-    height: 100px;
-    width: 200px;
-    color: var(--flax);
-    font-size: 40px;
-    border-bottom:6px solid var(--flax);
-    align-items: center;
+main div h2 {
+    font-size: 45px;
+    color: var(--header-color);
+    border-bottom: 5px solid var(--header-color);
+    background-color: var(--background-color);
+    text-align: center;
 }
 
 .projects {
-    height: 100px;
+    height: 1300px;
     width: 100%;
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.Run-Buddy {
+    height: 500px;
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .Run-Buddy img {
     height: 500px;
-    width: 700px;
-    position: relative;
-    top: 25px;
-    left: 110px;
+    width: 750px;
+    margin: 22px;
     border: 5px black solid;
     border-radius: 15px;
 }
 
-.project-2 img, .project-3 img, .project-4 img{
-    height: 250px;
-    width: 450px;
-    position: relative;
-    top: 25px;
-    left: 110px;
+.project-small {
+    margin: 18px;
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.project-small img {
+    height: 300px;
+    width: 500px;
+    /* position: relative; */
+    /* top: 25px;
+    left: 110px; */
     border: 5px black solid;
     border-radius: 15px;
 }
 
-.Run-Buddy img:hover,.project-2 img:hover, .project-3 img:hover, .project-4 img:hover {
+.Run-Buddy img:hover,.project-small img:hover {
     opacity: 0.9;
     transition: opacity .25 ease;
 }
 
 /* Media Query for iphone x */
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 1100px) {
+    
     /* need to stack header and footer in columns and more */
 }
