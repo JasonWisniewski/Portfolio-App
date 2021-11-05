@@ -5,14 +5,12 @@ This project is designed to show potential employers about myself and the demons
 skills that I have.  This project taught me a lot about organizing CSS and HTML to produce a product that is appealing and stylish.
 
 ## Installation
-To install the project clone the code in this repository.
+To install the project clone the code in this repository.  The site can also be accessed at https://jasonwisniewski.github.io/Portfolio-App/
 
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+This application is to be viewed by anyone interesetd in learning more abuot my skills and background.
+
+*SCREEN SHOT HERE!!!
 
 ## MIT License
 
