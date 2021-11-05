@@ -29,7 +29,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: 42px;
     color: var(--header-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0,0,0,0.002);
@@ -69,8 +69,8 @@ h1 {
 footer {
     height:fit-content;
     width: 100%;
+    padding: 50px 0 50px 0;
     color: var(--secondary-header-color);
-    font-size: 30 px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -79,9 +79,10 @@ footer {
 
 footer h2 {
     color: var(--header-color);
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
     padding: 13px;
+    border-bottom: 4px solid;
 }
 
 footer ul {
@@ -97,7 +98,7 @@ footer ul {
 footer ul li, footer ul li a {
     padding: 12px;
     font-weight: lighter;
-    font-size: 2.25vw;
+    font-size: 32px;
     text-shadow: 0 0 10px rgb(0 0 0 / 10%);
     text-decoration: none;
     color:var(--headers);
@@ -133,7 +134,6 @@ footer ul li a:hover {
 }
 
 /* About me */
-
 .section-title {
     font-size: 30px;
     color: var(--header-color);
@@ -141,10 +141,10 @@ footer ul li a:hover {
     padding-bottom: 10px;
     text-align: center;
     background-color: var(--background-color);
+    padding-top: 20px;
 }
 
 .about-me {
-    /* height: 500px; */
     width: 100%;
     background-color: var(--background-color);
     display: flex;
@@ -174,24 +174,13 @@ footer ul li a:hover {
 }
 
 /* Projects */
-
-/* .flex-row { */
-    /* display: flex; */
-    /* height: 100px;
-    width: 300px;
-    color: var(--header-color);
-    font-size: 40px;
-    border-bottom:6px solid var(--header-color);
-    align-items: center;
-    background-color: var(--background-color); */
-/* } */
-
 main div h2 {
     font-size: 45px;
     color: var(--header-color);
     border-bottom: 4px solid var(--header-color);
     background-color: var(--background-color);
     text-align: center;
+    padding: 20px 0 10px 0;
 }
 
 .projects {
@@ -252,14 +241,47 @@ main div h2 {
     transition: opacity .25 ease;
 }
 
-/* Media Query for iphone x */
 
-/*  -fix hero photo
-    - make header and footer stack
-    - resize project photos so they fit screen
-    -make no white space in back ground
-    - */
 
+/* media query for footer */
+@media screen and (max-width:1040px) {
+    
+    footer h2 {
+        padding-top: 0;
+        margin-bottom: 10px;
+        font-size: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    footer ul li, footer ul li a{
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}
+/* Media query to resize project images */
+@media screen and (max-width:850px) {
+
+    .Run-Buddy {
+        padding-bottom: 40px;
+    }
+    
+    .Run-Buddy img {
+        height: 100%;
+        width: 90%;
+    }
+    
+    .project-small img{
+        height: 90%;
+        width: 70%;
+    }
+    
+}
+/* media query to adjust header posistion */
 @media screen and (max-width:575px) {
     header {
         padding-bottom: 0;
@@ -267,7 +289,6 @@ main div h2 {
         position: relative;
     }
     header h1 {
-        font-size: 25px;
         width: 100%;
         text-align: center;
     }
@@ -278,10 +299,64 @@ main div h2 {
     }
 
 
-    /* media query for resizing p in about me section */
 }
 
-    /* media query for resizing for phone length ~300px
-    - do work for all background colors,  
-    - stack nav options 
-    - about me text */
+/* media query to adjust self portrait in about me */
+@media screen and (max-width:375px) {
+
+    header h1 {
+        font-size: 12vw;
+    }
+
+    header nav ul li a {
+        font-size: 7vw;
+    }
+
+    .section-title {
+        font-size: 10vw;
+    }
+
+    .about-me p {
+        padding: 8px 8px 8px 8px;
+    }
+
+    .about-me img {
+        height: 100%;
+        width: 73%;
+    }
+
+    .main div h2 {
+        font-size: 10vw;
+    }
+
+    .Run-Buddy {
+        /* margin-bottom: 60px; */
+    }
+
+    .Run-Buddy h3 {
+        font-size: 7vw;
+    }
+
+    .project-small {
+        padding: 20px 0 20px 0;
+        margin: 20px 0 20px 0;
+    }
+
+    .project-small h3 {
+        font-size: 7vw;
+    }
+
+    footer h2 {
+        padding-top: 0;
+        margin-bottom: 10px;
+        font-size: 11vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer ul li, footer ul li a{
+        display: flex;
+        justify-content: center;
+        font-size: 7vw;
+    }
+}
