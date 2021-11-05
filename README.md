@@ -10,7 +10,7 @@ To install the project clone the code in this repository.  The site can also be 
 ## Usage
 This application is to be viewed by anyone interesetd in learning more abuot my skills and background.
 
-*SCREEN SHOT HERE!!!
+<img src="./assets/images/screen-shot.png">
 
 ## MIT License
 
