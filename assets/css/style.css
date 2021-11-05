@@ -249,13 +249,33 @@ main div h2 {
 
 /* Media Query for iphone x */
 
-    /* need to stack header and footer in columns and more */
+/*  -fix hero photo
+    - make header and footer stack
+    - resize project photos so they fit screen
+    -make no white space in back ground
+    - */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width:575px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+
     /* media query for resizing p in about me section */
 }
 
-@media screen and (max-width: 950px) {
     /* media query for resizing for phone length ~300px
     - do work for all background colors,  
     - stack nav options 
