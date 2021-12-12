@@ -51,7 +51,7 @@ header nav ul li a {
     color: var(--secondary-header-color);
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2.25vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 

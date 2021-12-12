@@ -7,7 +7,7 @@ This project is designed to show potential employers about myself and the demons
 To install the project clone the code in this repository.  The site can also be accessed at https://jasonwisniewski.github.io/Portfolio-App/
 
 ## Usage
-This application is to be viewed by anyone interesetd in learning more abuot my skills and background.
+This application is to be viewed by anyone interesetd in learning more about my skills and background.
 
 <img src="./assets/images/screen-shot.png">
 
