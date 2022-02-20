@@ -192,7 +192,7 @@ main div h2 {
     background-color: var(--background-color);
 }
 
-.Run-Buddy {
+.large-project {
     width: 100%;
     margin: 25px;
     display: flex;
@@ -200,17 +200,17 @@ main div h2 {
     text-align: center;
 }
 
-.Run-Buddy h3, .project-small h3 {
+.large-project h3, .project-small h3 {
     padding: 8px;
     font-size: 30px;
     color: var(--secondary-header-color);
 }
 
-.Run-Buddy a, .project-small a {
+.large-project a, .project-small a {
     text-decoration: none;
 }
 
-.Run-Buddy img {
+.large-project img {
     height: 500px;
     width: 750px;
     margin: 22px;
@@ -236,7 +236,7 @@ main div h2 {
     border-radius: 15px;
 }
 
-.Run-Buddy img:hover,.project-small img:hover {
+.large-project img:hover,.project-small img:hover {
     opacity: 0.9;
     transition: opacity .25 ease;
 }
@@ -266,11 +266,11 @@ main div h2 {
 /* Media query to resize project images */
 @media screen and (max-width:850px) {
 
-    .Run-Buddy {
+    .large-project {
         padding-bottom: 40px;
     }
     
-    .Run-Buddy img {
+    .large-project img {
         height: 100%;
         width: 90%;
     }
@@ -329,11 +329,11 @@ main div h2 {
         font-size: 10vw;
     }
 
-    .Run-Buddy {
+    .large-project {
         /* margin-bottom: 60px; */
     }
 
-    .Run-Buddy h3 {
+    .large-project h3 {
         font-size: 7vw;
     }
 
