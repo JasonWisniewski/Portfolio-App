@@ -17,9 +17,14 @@ const Nav = (props) => {
     console.log("I was clicked!")
   }
   return (
-    <header>
-      <h2 className="mgh-small">Jason Wisniewski, Nav</h2>
-      <button onClick={onClick}>NAV</button>
+    <header className="flex-row px-3 pt-2">
+      <h2>
+        <a data-testid="link" href="/">
+          Jason Wisniewski
+        </a>
+        
+      </h2>
+      <button onClick={onClick} className="btn btn-primary">NAV</button>
       <nav> 
 
         <ul className="flex-row">
