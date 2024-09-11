@@ -1,13 +1,13 @@
-# Protfolio Application
+# Portfolio Application
 
 ## Description
-This project is designed to show potential employers about myself and the demonstrate skills that I have aquried.  This project taught me a lot about organizing CSS and HTML to produce a product that is appealing and stylish.
+This project is designed to show potential employers about myself and the demonstrate skills that I have acquired.  This project taught me a lot about organizing CSS and HTML to produce a product that is appealing and stylish.
 
 ## Installation
 To install the project clone the code in this repository.  The site can also be accessed at https://jasonwisniewski.github.io/Portfolio-App/
 
 ## Usage
-This application is to be viewed by anyone interesetd in learning more about my skills and background.
+This application is to be viewed by anyone interested in learning more about my skills and background.
 
 <img src="./assets/images/screen-shot.png">
 
