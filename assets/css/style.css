@@ -145,6 +145,7 @@ footer ul li a:hover {
 }
 
 .about-me {
+    padding-top: 40px;
     width: 100%;
     background-color: var(--background-color);
     display: flex;
@@ -166,7 +167,7 @@ footer ul li a:hover {
     padding: 50px;
     top: 150px;
     left: 90px;
-    text-align: center;
+    text-align: start;
     z-index: 999;
     background-color: #d3d3d3;
     border-radius: 5px;
